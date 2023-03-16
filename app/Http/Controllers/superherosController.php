@@ -14,10 +14,6 @@ class superherosController extends Controller
 
         $superheros = superheros::all();
 
-        $men =superheros::where('gender', '=', 'Male')->get();
-
-        $woman =superheros::where('gender', '=', 'Female')->get();
-
-    return view('superheroes', compact('page_title', 'superheros', 'men', 'woman'));
+    return view('superheroes', compact('page_title', 'superheros'));
     }
 }

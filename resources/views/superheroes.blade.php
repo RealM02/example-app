@@ -57,5 +57,9 @@
     <a href="{{route('welcome') }}">Ir al Inicio</a> 
     <br>
     <a href="{{route('example') }}">Ir al Example</a>
+    <br>
+    <a href="{{route('heros_male') }}">Ir al Male Superheros</a>
+    <br>
+    <a href="{{route('heros_female') }}">Ir al Female Superheros</a>
 </body>
 </html>

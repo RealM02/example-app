@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\superherosController;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +28,8 @@ Route::get('/example', function(){
 
 //Route::get('/heros', function(){})->name('heros');
 Route::get('/heros',[superherosController::class, 'index'])->name('heros');
+
+
+Route::get('/heros_female',[superherosfemaleController::class, 'index'])->name('heros_female');
+
+Route::get('/heros_male',[superherosmaleController::class, 'index'])->name('heros_male');
